@@ -1,22 +1,22 @@
 {
   "name": "nxfox",
-  "homepage": "https://diegoww12a.github.io/Nxfox/",
+  "homepage": "https://Diegoww12a.github.io/Nxfox/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:github": "vite build --mode github",
     "preview": "vite preview",
     "predeploy": "npm run build:github",
     "deploy": "gh-pages -d dist"
-    
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.27",
+    "autoprefixer": "^10.4.24",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
-    "vite": "^7.3.1"
+    "vite": "^7.2.4"
   },
   "dependencies": {
     "gh-pages": "^6.3.0"
