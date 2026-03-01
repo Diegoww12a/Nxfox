@@ -7,14 +7,5 @@ export default defineConfig(({ mode }) => ({
   server: {
     port: 5173,
     open: true
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'dashboard.html'),
-        sobre: resolve(__dirname, 'clientes.html'),
-        contato: resolve(__dirname, 'licencas.html')
-      }
-    }
   }
 }))
