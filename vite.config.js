@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite'
-import { resolve } from 'path'
 
-export default defineConfig({
-  base: '/Nxfox/',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'github'
+    ? '/Nxfox/'
+    : '/',
+  server: {
+    port: 5173,
+    open: true
+  },
   build: {
     rollupOptions: {
       input: {
@@ -12,4 +17,4 @@ export default defineConfig({
       }
     }
   }
-})
+}))
