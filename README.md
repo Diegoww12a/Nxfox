@@ -45,4 +45,4 @@ npm run deploy
 
 ## Autor
 
-**Diego Neves** — Desenvolvedor Front-end
+**Diego Neves** — Desenvolvedor Full Stack
